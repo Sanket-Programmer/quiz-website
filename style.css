@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    font-family: 'Poppins',sans-serif;
+    background-image: linear-gradient(90deg , rgb(149, 192, 253) , rgb(222, 164, 253)); 
+    font-family: "Carlito", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow-y: hidden;
+}
+
+.app{
+    position: relative;
+    top: 7vw;
+    left: 19vw;
+    background: white;
+    width: 55vw;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 3vw;
+}
+
+.app h1{
+    font-size: 2.5vw;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1vw;
+     font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.quiz{
+    padding: 1vw 0;
+}
+
+.quiz h2{
+    font-size: 2vw;
+    color: #001e4d;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.btn{
+    background: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 1vw;
+    margin: 0.5vw 0;
+    text-align: left;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2vw;
+}
+
+.btn:hover:not([disabled]){
+    background: #222;
+    color: white;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #5998fc;
+    color: white;
+    font-weight: 500;
+    width: 6vw;
+    border: 0;
+    padding: 0.5vw;
+    margin: 20px auto 0;
+    border-radius: 7px;
+    cursor: pointer;
+    display: none;
+    font-size: 1vw;
+}
+
+#next-btn:hover{
+    background: #0650c7;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+.landing_page{
+    background-color: #ffffff;
+    height: 88vh;
+    width: 93.5vw;
+    position: relative;
+    top: 3vw;
+    left: 3vw;
+    border-radius: 1.5vw;
+    box-shadow: 5px 5px 20px 5px rgb(173, 105, 237)  ;
+}
+
+.landing_page img{
+    position: absolute;
+    left: 50vw;
+    top: 5vh;
+    height: 40vw;
+}
+
+.heading{
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    font-size: 1.5vw;
+    width: 50vw;
+    font-family: "Asul", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heading button , .navbar button{
+    font-size: 1.5vw;
+    background-color: #9e65f3;
+    color: #ffffff;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    border: none;
+}
+
+.heading button:hover{
+    background-color: #7d2ff2;
+}
+
+.landing_page i{
+    font-size: 1.75vw;
+    position: absolute;
+    top: 1.5vh;
+    left: 1.5vw;
+    font-weight: 600;
+    color: #9e65f3;
+}
+
+footer p{
+    position: absolute;
+    left: 45vw;
+    font-size: 1vw;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    position: absolute;
+    left: 50vw;
+    color: #9e65f3;
+    top: 1vh;
+}
+
+.navbar ul li{
+    font-size: 1vw;
+}
+
+.navbar button{
+    position: absolute;
+    left: 86vw;
+    top: 1.75vh;
+    font-size: 1vw;
+}
+
+.heading p{
+    font-size: 1vw;
+}
+
+.heading a{
+    color: #9e65f3;
+}
+
+@media (max-width: 480px){
+    .app{
+        position: absolute;
+        top: 55vw;
+        left: 7vw;
+        height: fit-content;
+        width: 80vw;
+    }
+
+    .app h1{
+        font-size: 5vh;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .quiz h2{
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    
+    .btn{
+        font-size: 1.75vh;
+        text-align: center;
+        padding: 3vw;
+        margin-bottom: 3vw;
+        border-radius: 1.5vw;
+    }
+
+    #next-btn{
+        font-size: 2vh;
+        width: fit-content;
+        padding: 3vw;
+        height: fit-content;
+    }
+
+    .landing_page{
+        height: 96vh;
+        width: 94vw;
+    }
+
+    .landing_page img{
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        height: 70vw;
+    }
+
+    .landing_page .heading{
+        position: absolute;
+        top: 100vw;
+        font-size: 4vw;
+        width: 90%;
+        text-align: center;
+    }
+
+    .landing_page .heading button{
+        font-size: 6vw;
+        padding: 1.5vw;
+        border-radius: 1vw;
+    }
+
+    .landing_page .heading p{
+        font-size: 4vw;
+    }
+
+    .landing_page i{
+        position: relative;
+        left: 32vw;
+        font-size: 5vw;
+    }
+
+    .navbar ul{
+        position: absolute;
+        left: 1.5vw;
+        top: 4vh;
+
+    }
+
+    .navbar ul li{
+        font-size: 3vw;
+        width: 15vw;
+        text-align: center;
+    }
+
+    .navbar button{
+        position: relative;
+        top: 7vh;
+        left: 40vw;
+        font-size: 4vw;
+        padding: 1.5vw;
+        border-radius: 1vw;
+    }
+
+    footer p{
+        font-size: 3vw;
+        position: absolute;
+        top: 92vh;
+        left: 33vw;
+    }
+}
+
+@media (min-width:481px) and (max-width:1024px){
+    .app{
+        position: relative;
+        top: 8vh;
+    }
+
+    #next-btn{
+        border-radius: 0.5vw;
+    }
+}
+
