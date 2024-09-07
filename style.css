@@ -301,6 +301,9 @@ footer p{
     position: absolute;
     top: 20vw;
    }
-
+ .navbar button{
+    position: absolute;
+    top: 2vw;
+   }
 
 }
