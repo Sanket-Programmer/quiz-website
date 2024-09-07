@@ -283,6 +283,7 @@ footer p{
 @media (min-width:481px) and (max-width:1024px){
       body{
         width: 0vw;
+          overflow-y: hidden;
     }
     .app{
         position: relative;
@@ -293,70 +294,14 @@ footer p{
         border-radius: 0.5vw;
     }
 
-    .landing_page{
-        height: 200vw;
-        width: 94vw;
-    }
+      .landing_page{
+       height: 50vw;
+   }
 
-    .landing_page img{
-        position: absolute;
-        left: 10vw;
-        top: 30vw;
-        height: 70vw;
-    }
+   .heading {
+    position: absolute;
+    top: 20vw;
+   }
 
-    .landing_page .heading{
-        position: absolute;
-        top: 100vw;
-        font-size: 4vw;
-        width: 90%;
-        text-align: center;
-    }
-
-    .landing_page .heading button{
-        font-size: 6vw;
-        padding: 1.5vw;
-        border-radius: 1vw;
-    }
-
-    .landing_page .heading p{
-        font-size: 4vw;
-    }
-
-    .landing_page i{
-        position: relative;
-        left: 32vw;
-        font-size: 5vw;
-    }
-
-    .navbar ul{
-        position: absolute;
-        left: 6vw;
-        top: 6vh;
-
-    }
-
-    .navbar ul li{
-        font-size: 3vw;
-        width: 15vw;
-        text-align: center;
-    }
-
-    .navbar button{
-        position: relative;
-        top: 9vh;
-        left: 40vw;
-        font-size: 4vw;
-        padding: 1.5vw;
-        border-radius: 1vw;
-    }
-
-    footer p{
-        font-size: 3vw;
-        position: relative;
-        top: -10vw;
-        left: 33vw;
-        width: 50vw;
-    }
 
 }
