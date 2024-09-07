@@ -281,6 +281,9 @@ footer p{
 }
 
 @media (min-width:481px) and (max-width:1024px){
+      body{
+        width: 0vw;
+    }
     .app{
         position: relative;
         top: 8vh;
@@ -353,6 +356,7 @@ footer p{
         position: relative;
         top: -10vw;
         left: 33vw;
+        width: 50vw;
     }
 
 }
